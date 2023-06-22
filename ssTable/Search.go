@@ -1,7 +1,7 @@
 package ssTable
 
 import (
-	"github.com/zwshan/golsm/kv"
+	"github.com/zwshan/golsm/KeyValue"
 	"log"
 )
 

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"encoding/json"
-	"github.com/zwshan/golsm/kv"
+	"github.com/zwshan/golsm/KeyValue"
 	"github.com/zwshan/golsm/sortTree"
 	"log"
 	"os"

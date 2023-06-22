@@ -1,8 +1,8 @@
 package ssTable
 
 import (
-	"github.com/zwshan/golsm/config"
-	"github.com/zwshan/golsm/kv"
+	"github.com/zwshan/golsm/Systemconfig"
+	"github.com/zwshan/golsm/KeyValue"
 	"github.com/zwshan/golsm/sortTree"
 	"log"
 	"os"

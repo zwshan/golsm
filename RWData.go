@@ -2,7 +2,7 @@ package lsm
 
 import (
 	"encoding/json"
-	"github.com/zwshan/golsm/kv"
+	"github.com/zwshan/golsm/KeyValue"
 	"log"
 )
 

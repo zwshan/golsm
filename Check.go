@@ -1,7 +1,7 @@
 package lsm
 
 import (
-	"github.com/zwshan/golsm/config"
+	"github.com/zwshan/golsm/Systemconfig"
 	"log"
 	"time"
 )

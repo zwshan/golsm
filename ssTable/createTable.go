@@ -2,8 +2,8 @@ package ssTable
 
 import (
 	"encoding/json"
-	"github.com/zwshan/golsm/config"
-	"github.com/zwshan/golsm/kv"
+	"github.com/zwshan/golsm/Systemconfig"
+	"github.com/zwshan/golsm/KeyValue"
 	"log"
 	"os"
 	"sort"

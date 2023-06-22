@@ -1,7 +1,7 @@
 package ssTable
 
 import (
-	"github.com/zwshan/golsm/config"
+	"github.com/zwshan/golsm/Systemconfig"
 	"io/ioutil"
 	"log"
 	"path"

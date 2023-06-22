@@ -2,7 +2,7 @@ package ssTable
 
 import (
 	"fmt"
-	"github.com/zwshan/golsm/kv"
+	"github.com/zwshan/golsm/KeyValue"
 	"sync"
 )
 
