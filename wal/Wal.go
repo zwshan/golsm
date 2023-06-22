@@ -117,7 +117,7 @@ func (w *Wal) Write(value kv.Value) {
 	if value.Deleted {
 		log.Println("wal.log:	delete ", value.Key)
 	} else {
-		log.Println("wal.log:	insert ", value.Key)
+		// log.Println("wal.log:	insert ", value.Key)
 	}
 
 	data, _ := json.Marshal(value)

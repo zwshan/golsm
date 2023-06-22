@@ -29,7 +29,7 @@ func Get[T any](key string) (T, bool) {
 
 // Set 插入元素
 func Set[T any](key string, value T) bool {
-	log.Print("Insert ", key, ",")
+	// log.Print("Insert ", key, ",")
 	data, err := kv.Convert(value)
 	if err != nil {
 		log.Println(err)

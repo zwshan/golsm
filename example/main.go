@@ -3,8 +3,8 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/whuanle/lsm"
-	"github.com/whuanle/lsm/config"
+	"github.com/zwshan/golsm"
+	"github.com/zwshan/golsm/config"
 	"os"
 	"time"
 )
@@ -26,13 +26,14 @@ func main() {
 		}
 	}()
 	lsm.Start(config.Config{
-		DataDir:       `E:\项目\lsm数据测试目录`,
+		DataDir:       `/home/ubuntu/lsm-main/example/testDir`,
 		Level0Size:    100,
 		PartSize:      4,
 		Threshold:     3000,
 		CheckInterval: 3,
 	})
-	query()
+	// query()
+	insert()
 
 }
 
@@ -59,19 +60,6 @@ func insert() {
 		D: "00000000000000000000000000000000000000",
 	}
 	
-	//testVData, _ := json.Marshal(testV)
-	//// 131 个字节
-	//kvData, _ := kv.Encode(kv.Value{
-	//	Key:     "abcdef",
-	//	Value:   testVData,
-	//	Deleted: false,
-	//})
-	//fmt.Println(len(kvData))
-	//position := ssTable.Position{}
-	//// 35 个字节
-	//positionData, _ := json.Marshal(position)
-	//fmt.Println(len(positionData))
-	//
 	count := 0
 	start := time.Now()
 	key := []byte{'a', 'a', 'a', 'a', 'a', 'a'}
