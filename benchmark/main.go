@@ -33,32 +33,32 @@ func main() {
 		CheckInterval: 3,
 	})
 
-	insertKVCouples(10)
-	queryinsertKVCouples()
+	insertKVCouples(1)
+	// queryInsertKVCouples("aaaaaa")
 
 }
 
-func queryinsertKVCouples() {
-	start := time.Now()
-	v, _ := lsm.Get[TestValue]("aaaaaa")
-	elapse := time.Since(start)
-	fmt.Println("查找 aaaaaa 完成，消耗时间：", elapse)
-	fmt.Println(v)
-
-	start = time.Now()
-	v, _ = lsm.Get[TestValue]("aazzzz")
-	elapse = time.Since(start)
-	fmt.Println("查找 aazzzz 完成，消耗时间：", elapse)
-	fmt.Println(v)
-}
-
-// func queryInsertKVCouples(key string) {
+// func queryinsertKVCouples() {
 // 	start := time.Now()
-// 	v, _ := lsm.Get[TestValue](key)
+// 	v, _ := lsm.Get[TestValue]("aaaaaa")
 // 	elapse := time.Since(start)
-// 	fmt.Println("查找", key, "完成，消耗时间：", elapse)
+// 	fmt.Println("查找 aaaaaa 完成，消耗时间：", elapse)
+// 	fmt.Println(v)
+
+// 	start = time.Now()
+// 	v, _ = lsm.Get[TestValue]("aazzzz")
+// 	elapse = time.Since(start)
+// 	fmt.Println("查找 aazzzz 完成，消耗时间：", elapse)
 // 	fmt.Println(v)
 // }
+
+func queryInsertKVCouples(key string) {
+	start := time.Now()
+	v, _ := lsm.Get[TestValue](key)
+	elapse := time.Since(start)
+	fmt.Println("查找", key, "完成，消耗时间：", elapse)
+	fmt.Println(v)
+}
 
 
 
