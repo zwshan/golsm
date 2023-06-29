@@ -33,26 +33,17 @@ func main() {
 		CheckInterval: 3,
 	})
 
-	insertKVCouples(1)
-	// queryInsertKVCouples("aaaaaa")
+	insertKVCouples(50)
+	queryInsertKVCouples("azzzzz")
+	queryInsertKVCouples("aaaaaa")
+	
 
 }
 
-// func queryinsertKVCouples() {
-// 	start := time.Now()
-// 	v, _ := lsm.Get[TestValue]("aaaaaa")
-// 	elapse := time.Since(start)
-// 	fmt.Println("查找 aaaaaa 完成，消耗时间：", elapse)
-// 	fmt.Println(v)
 
-// 	start = time.Now()
-// 	v, _ = lsm.Get[TestValue]("aazzzz")
-// 	elapse = time.Since(start)
-// 	fmt.Println("查找 aazzzz 完成，消耗时间：", elapse)
-// 	fmt.Println(v)
-// }
 
 func queryInsertKVCouples(key string) {
+	lsm.Get[TestValue](key)
 	start := time.Now()
 	v, _ := lsm.Get[TestValue](key)
 	elapse := time.Since(start)

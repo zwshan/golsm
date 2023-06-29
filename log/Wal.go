@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"github.com/zwshan/golsm/KeyValue"
-	"github.com/zwshan/golsm/sortTree"
+	"github.com/zwshan/golsm/memTree"
 	"log"
 	"os"
 	"path"

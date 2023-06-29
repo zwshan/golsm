@@ -2,9 +2,9 @@ package lsm
 
 import (
 	"github.com/zwshan/golsm/Systemconfig"
-	"github.com/zwshan/golsm/sortTree"
+	"github.com/zwshan/golsm/memTree"
 	"github.com/zwshan/golsm/ssTable"
-	"github.com/zwshan/golsm/wal"
+	"github.com/zwshan/golsm/log"
 	"log"
 	"os"
 )

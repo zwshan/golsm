@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/zwshan/golsm/KeyValue"
 	"log"
+	"fmt"
 )
 
 // Get 获取一个元素
@@ -13,6 +14,7 @@ func Get[T any](key string) (T, bool) {
 	value, result := database.MemoryTree.Search(key)
 
 	if result == kv.Success {
+		fmt.Println("在内存表中查找到")
 		return getInstance[T](value.Value)
 	}
 
